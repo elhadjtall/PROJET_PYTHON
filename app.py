@@ -43,6 +43,11 @@ def recrutement():
 def about():
     return render_template('about.html')
 
+# La route pour le contact
+@app.route('/contact')
+def contact():
+    return render_template('contact.html')
+
 # Exécution de l'application
 if __name__ == '__main__':
     app.run(debug=True)
